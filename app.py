@@ -17,7 +17,7 @@ with st.sidebar:
     st.header("Common Parameters")
     T = st.number_input("Horizon T (years)", value=2.0, step=0.5, min_value=0.1)
     dt = st.number_input("Time step Δt (years)", value=0.01, step=0.005, min_value=0.001, format="%.5f")
-    n_paths = st.slider("Number of simulated paths", 1, 500, 50)
+    n_paths = st.slider("Number of simulated paths", 1, 500, 15)
     seed_on = st.checkbox("Set random seed", value=True)
     seed = st.number_input("Seed (if checked)", value=42, step=1) if seed_on else None
 
